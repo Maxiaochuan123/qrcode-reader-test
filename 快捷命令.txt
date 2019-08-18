@@ -1,0 +1,15 @@
+rimraf node_modules
+
+装好后,配置环境 系统 peth 变量
+在需要的目录生成 ssl
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+
+运行 http-server -S 开启 https 模式
+http-server -S -C cert.pem -o
+
+安装 vue-cli3 : https://cloud.tencent.com/developer/news/316097
+
+识别二维码1: https://gruhn.github.io/vue-qrcode-reader/demos/DecodeAll.html
+识别二维码2: https://github.com/cozmo/jsQR
+
+生成 在线 https页面: https://github.com/Maxiaochuan123/qrcode-reader-test.git
